@@ -13,6 +13,8 @@ p {
     margin: 0;
     padding: 0;
     color: #f6fbff;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 div.container {
@@ -77,26 +79,87 @@ button.rbutton {
 border-radius: 12px;
 }
 
-div.feature {
-    text-align: center;
+div.mains {
+margin-top: 60px;
 }
 div.row {
     display: flex;
-    width: 790px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
+div.f1 {
+    width: 500px;
+    line-height: 150%;
+}
+
 div.access p, div.security p, div.collab p, div.store p {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
 
+div.access h3 {
+    margin-top: 25px;
+}
+div.security h3 {
+    margin-top: 16px;
+}
+div.collab h3 {
+    margin-top: 20px;
+}
+div.store h3 {
+    margin-top: 27px;
+}
+div.row h3 {
+    margin-bottom: 10px;
+}
+
+div.second {
+    margin-top: 60px;
+}
 div.seconds {
     display: flex;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+div.s1 {
+    width: 500px;
+}
+div.staytext {
+    text-align: left;
+    padding-top: 90px;
+}
+div.staytext p.cap {
+    margin-bottom: 20px;
+}
+
+div.review {
+    margin-top: 60px;
+}
+
+div.rev-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+div.box {
+    width: 400px;
+    line-height: 140%;
+}
+div.box p {
+    font-size: 12px;
+}
+div.box p.founder {
+    font-weight: 600;
+}
+div.box img {
+    border-radius: 50%;
 }
 
 ::placeholder {
