@@ -17,13 +17,19 @@ p {
     line-height: 150%;
 }
 
+ul {
+    list-style-type: none;
+}
+ul li {
+    text-decoration: none;
+}
+
 div.container {
     max-width: 1400px;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
 }
-
 div.header {
     padding: 20px;
     display: flex;
@@ -42,12 +48,16 @@ nav ul li {
     margin-right: 20px;
 }
 
+
 div.main {
     margin-top: 25px;
 }
 
 div.intro {
     text-align: center;
+    background-image: url(assets/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 img.introimg {
     margin-bottom: 20px;
@@ -59,28 +69,24 @@ div.intro p {
     line-height: 140%;
     font-weight: 400;
 }
-div.intro h1, div.intro p {
-    width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
+
 button.button {
-border: none;
-color: #ffffff;
-background-color: #4ec3d4;
-padding: 15px 80px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 10px 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #4ec3d4;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
 }
 button.rbutton {
-border-radius: 12px;
+    border-radius: 12px;
 }
 
 div.mains {
-margin-top: 60px;
+    padding-top: 60px;
+    background-color: #181e2a;
 }
 div.row {
     display: flex;
@@ -95,11 +101,7 @@ div.f1 {
     line-height: 150%;
 }
 
-div.access p, div.security p, div.collab p, div.store p {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 div.access h3 {
     margin-top: 25px;
@@ -118,7 +120,8 @@ div.row h3 {
 }
 
 div.second {
-    margin-top: 60px;
+    padding-top: 60px;
+    background-color: #181e2a;
 }
 div.seconds {
     display: flex;
@@ -138,19 +141,26 @@ div.staytext p.cap {
 }
 
 div.review {
-    margin-top: 60px;
+    padding-top: 60px;
+    background-color: #181e2a;
 }
 
 div.rev-box {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
+    z-index: 1;
+    position: relative;
+    bottom: 13px;
+    right: 25px;
 }
 div.box {
     width: 400px;
     line-height: 140%;
+    background-color: #1c2230;
+    padding: 30px;
 }
 div.box p {
     font-size: 12px;
@@ -161,6 +171,17 @@ div.box p.founder {
 div.box img {
     border-radius: 50%;
 }
+
+div.prof {
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+div.person {
+    float: left;
+    width: 70%;
+}
+
 
 ::placeholder {
     color: lightgray;
