@@ -74,7 +74,7 @@ button.button {
     border: none;
     color: #ffffff;
     background-color: #4ec3d4;
-    padding: 15px 80px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -171,7 +171,9 @@ div.box p.founder {
 div.box img {
     border-radius: 50%;
 }
-
+div.profile {
+    overflow: hidden;
+}
 div.prof {
     float: left;
     width: 10%;
@@ -179,10 +181,20 @@ div.prof {
 }
 div.person {
     float: left;
-    width: 70%;
+    width: 90%;
 }
 
-
+div.early-box {
+    background-color: #181e2a;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: -90px;
+}
+.info-email {
+    width: 60%;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+}
 ::placeholder {
     color: lightgray;
     background-color:#ffffff;
@@ -193,4 +205,120 @@ div.person {
 }
 ::-ms-input-placeholder {
     color: lightgray;
+}
+div.email-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+div.emaili {
+    width: 60%;
+    line-height: 150%;
+    background-color: #1c2230;
+    padding: 30px;
+    border: 1px solid #1c2230;
+    box-shadow: 3px 3px #1c2230;
+}
+
+div.footer {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-color: #0c1524;
+    overflow: hidden;
+    font-size: 12px;
+}
+div.footer-info {
+    overflow: hidden;
+    padding-left: 80px;
+}
+div.logo {
+    padding-left: 80px;
+    margin-bottom: 20px;
+}
+div.loca {
+    float: left;
+    width: 20%;
+}
+div.loca p {
+    float: left;
+    width: 90%;
+    font-size: 12px;
+}
+div.contact {
+    float: left;
+    width: 40%;
+    padding-left: 150px;
+}
+div.call, div.email {
+    overflow: hidden;
+}
+div.image {
+    float: left;
+    width: 10%;
+}
+div.ephone {
+    float: left;
+    width: 90%;
+}
+div.one-bnav {
+    float: left;
+    width: 10%;
+}
+div.two-bnav {
+    float: left;
+    width: 10%;
+}
+div.footer li {
+    margin-bottom: 10px;
+}
+div.socials {
+    float: left;
+    width: 20%;
+}
+div.socials a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+}
+div.socials i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    div.loca, div.contact, div.one-bnav, div.two-bnav {
+        width: 100%;
+    }
+    div.contact {
+        padding-left: 0;
+    }
+    div.footer-info {
+        padding-left: 5px;
+    }
+    div.logo {
+        padding-left: 5px;
+    }
+    div.logo img {
+        width: 30%;
+    }
+    div.emaili {
+        padding: 10px;
+        width: 80%;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+    .info-email {
+        width: 100%;
+    }
+    button.button {
+        margin: 5px 0;
+        padding: 15px 50px;
+        font-size: 11px;
+    }
 }
