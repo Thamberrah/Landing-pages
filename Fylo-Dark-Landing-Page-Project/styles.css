@@ -86,7 +86,7 @@ button.rbutton {
 
 div.mains {
     padding-top: 60px;
-    background-color: #181e2a;
+    background-color: #181f2b;
 }
 div.row {
     display: flex;
@@ -96,9 +96,13 @@ div.row {
     margin: 0;
     text-align: center;
 }
+div.sec {
+    margin-top: 30px;
+}
 div.f1 {
     width: 500px;
     line-height: 150%;
+    padding-top: 30px;
 }
 
 
@@ -121,7 +125,7 @@ div.row h3 {
 
 div.second {
     padding-top: 60px;
-    background-color: #181e2a;
+    background-color: #181f2b;
 }
 div.seconds {
     display: flex;
@@ -235,7 +239,7 @@ div.footer-info {
     overflow: hidden;
     padding-left: 80px;
 }
-div.logo {
+div.flogo {
     padding-left: 80px;
     margin-bottom: 20px;
 }
@@ -290,35 +294,79 @@ div.socials i {
     font-size: 16px;
     padding: 10px;
 }
+@media only screen and (max-width: 500px) {
+    nav {
+        flex: none;
+        font-size: 10px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
 
+}
 @media only screen and (max-width: 768px) {
     div.loca, div.contact, div.one-bnav, div.two-bnav {
         width: 100%;
     }
-    div.contact {
+    div.container {
         padding-left: 0;
-    }
-    div.footer-info {
-        padding-left: 5px;
+        padding-right: 0;
     }
     div.logo {
         padding-left: 5px;
     }
-    div.logo img {
-        width: 30%;
+    div.intro h1 {
+        font-size: 22px;
     }
+    div.main h1 br {
+        display: none;
+    }
+    div.intro p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        padding-left: 40px;
+        padding-right: 40px;
+        line-height: 150%;
+    }
+    div.main p br {
+        display: none;
+    }
+    button.button {
+        margin: 5px 0;
+        padding: 15px 60px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    button.rbutton {
+        border-radius: 100px;
+    }
+    div.mains p {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 12px;
+    }
+    div.second p br {
+        display: block;
+    }
+
     div.emaili {
         padding: 10px;
         width: 80%;
         box-shadow: none;
         border-radius: 10px;
     }
+
+
     .info-email {
         width: 100%;
     }
-    button.button {
-        margin: 5px 0;
-        padding: 15px 50px;
-        font-size: 11px;
+
+    
+    div.contact {
+        padding-left: 0;
+    }
+    div.footer-info {
+        padding-left: 5px;
     }
 }
